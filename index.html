@@ -10,11 +10,17 @@
   <link rel="manifest" href="site.webmanifest">
   <title>K7</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Outfit:wght@100..900&display=swap');
+    *{
+      box-sizing: border-box;
+    }
+    hr{
+      border-color: #e4e4e430;
+      margin: 2rem 0;
+    }
     body{
       color-scheme: dark;
       background: #000;
-      overflow: hidden;
       width: 100vw;
       height: 100vh;
       padding: 0;
@@ -22,38 +28,47 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: center;
       color: #E4E4E4;
-      font-family: "Kalnia", serif;
+      font-family: "Outfit", sans-serif;
       font-optical-sizing: auto;
       font-weight: 100;
       font-style: normal;
+    }
+    .container{
+      width: 100%;
+      max-width: 980px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
     }
     img{
       max-height: 98svh;
       margin-top: 1svh;
       max-width: 50vw;
     }
-    h2{
-      font-size: 160px;
+    h2,.h2{
+      font-family: "Kalnia", serif;
       font-weight: 500;
+      font-size: 34px;
+      line-height: 51px;
       margin: 0;
-      letter-spacing: -14px;
     }
-    h6{
-      font-size: 60px;
+    h6,.h6{
       font-weight: 100;
+      font-size: 21px;
       margin: 0;
     }
     a, a:hover, a:focus, a:visited {
       text-decoration: none;
       color: inherit;
     }
+    .nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
     @media screen and (max-width: 767px){
-      body{
-        flex-direction: column;
-        overflow-y: scroll;
-      }
       .content{
         padding: 12px;
       }
@@ -63,11 +78,18 @@
     }
   </style>
 </head>
-<body bgcolor="#000">
-  <img srcset="k7.png 2x">
-  <div class="content">
-    <h2>K7</h2>
-    <h6>New home of <a href="https://beautevil.design/" target="_blank">Kiran Pankan</a></h6>
+<body>
+  <div class="container">
+    <img srcset="k7.png 2x">
+    <div class="content">
+      <h2>I craft digital products and services that seamlessly blend design and technology.</h2>
+      <hr>
+      <div class="nav">
+        <a class="h6" href="">Works</a>
+        <a class="h6" href="">About</a>
+        <a class="h6" href="">Contact</a>
+      </div>
+    </div>
   </div>
 </body>
 </html>
