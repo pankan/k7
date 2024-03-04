@@ -68,7 +68,8 @@ h6,
 a,
 a:hover,
 a:focus,
-a:visited {
+a:visited,
+a *{
   text-decoration: none;
   color: #E4E4E4;
 }
@@ -219,12 +220,6 @@ textarea:focus{
   outline: 1px solid #ffffff88;
 }
 @media screen and (max-width: 767px) {
-  a {  
-    all: initial;
-  }
-  a * {
-    all: unset
-  }
   .container{
     width: calc(100% - 40px);
   }
