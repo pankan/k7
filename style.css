@@ -70,7 +70,7 @@ a:hover,
 a:focus,
 a:visited {
   text-decoration: none;
-  color: inherit;
+  color: #E4E4E4;
 }
 button{
   font-family: "Kalnia", serif;
