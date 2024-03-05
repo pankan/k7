@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import Footer from '../components/Footer.vue'
+  import WorkThumb from '../components/WorkThumb.vue'
   import { RouterLink } from 'vue-router'
 </script>
 
@@ -9,19 +10,14 @@
       <h2>Works</h2>
       <hr>
       <div class="works">
-        <router-link to="/works/detail" class="work">
-          <div class="thumb">
-            <img srcset="../assets/img/lx-thumb.png 2x">
-          </div>
-          <div class="info">
-            <div class="year">2024</div>
-            <div class="bottom">
-              <div class="title h2">Loxx.ai</div>
-              <div class="desc">SDLC platform designed from the ground up to integrate AI</div>
-              <div class="tags h6">Product, Branding, Web</div>
-            </div>
-          </div>
-        </router-link>
+        <WorkThumb
+          link="/works/detail"
+          image="lx-thumb.png"
+          year="2024"
+          title="Loxx.ai"
+          description="SDLC platform designed from the ground up to integrate AI"
+          tags="Product, Branding, Web"
+        />
         <router-link to="/works/detail" class="work">
           <div class="thumb">
             <img srcset="../assets/img/eg-thumb.png 2x">
