@@ -76,7 +76,7 @@ a *{
 button{
   font-family: "Outfit", sans-serif;
   color: #E4E4E4;
-  font-size: 16px;
+  font-size: 14px;
   background: #ffffff13;
   border: 1px solid #ffffff44;
   border-radius: .5rem;
@@ -201,8 +201,7 @@ img.fill-in{
   display: flex;
   align-content: center;
   gap: 8px;
-  min-width: 146px;
-  font-size: 13px;
+  min-width: 132px;
 }
 .social button img{
   max-height: 1rem;
