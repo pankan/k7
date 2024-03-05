@@ -201,7 +201,7 @@ img.fill-in{
   display: flex;
   align-content: center;
   gap: 8px;
-  min-width: 132px;
+  min-width: 140px;
 }
 .social button img{
   max-height: 1rem;
