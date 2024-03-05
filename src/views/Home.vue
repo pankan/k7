@@ -8,9 +8,9 @@
       <h2>I craft digital products and services that seamlessly blend design and technology.</h2>
       <hr>
       <div class="nav">
-        <a class="h6" href="/works">Works</a>
-        <a class="h6" href="/about">About</a>
-        <a class="h6" href="/contact">Contact</a>
+        <router-link to="/works">Works</router-link>
+        <router-link to="/about">About</router-link>
+        <router-link to="/contact">Contact</router-link>
       </div>
     </div>
   </div>
