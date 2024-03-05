@@ -1,0 +1,34 @@
+[
+  {
+    "link": "/works/detail",
+    "image": "lx-thumb.png",
+    "year": "2024",
+    "title": "Loxx.ai",
+    "description": "SDLC platform designed from the ground up to integrate AI",
+    "tags": "Product, Branding, Web"
+  },
+  {
+    "link": "/works/detail",
+    "image": "eg-thumb.png",
+    "year": "2024",
+    "title": "Edge",
+    "description": "Peer-to-peer serverless infrastructure using the spare capacity",
+    "tags": "Product, Branding, Multi-OS"
+  },
+  {
+    "link": "/works/detail",
+    "image": "bs-thumb.png",
+    "year": "2024",
+    "title": "BeanStalk",
+    "description": "AI-first Business intelligence and Customer experience",
+    "tags": "Product, Branding, Web"
+  },
+  {
+    "link": "/works/detail",
+    "image": "bx-thumb.png",
+    "year": "2023",
+    "title": "Blox Suite",
+    "description": "The virtual office to unite your remote workforce",
+    "tags": "Product, Branding, Desktop, Mobile, Web"
+  }
+]

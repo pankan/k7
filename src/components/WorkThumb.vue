@@ -1,3 +1,32 @@
+<script setup lang="ts">
+  import { RouterLink } from 'vue-router'
+  defineProps({
+    link: {
+      type: String,
+      required: true,
+    },
+    image: {
+      type: String,
+      required: true,
+    },
+    year: {
+      type: String,
+      required: true,
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+    tags: {
+      type: String,
+      required: true,
+    },
+  })
+</script>
 <template>
   <router-link :to="link" class="work">
     <div class="thumb">
@@ -13,32 +42,3 @@
     </div>
   </router-link>
 </template>
-
-<script setup lang="ts">
-defineProps({
-  link: {
-    type: String,
-    required: true,
-  },
-  image: {
-    type: String,
-    required: true,
-  },
-  year: {
-    type: String,
-    required: true,
-  },
-  title: {
-    type: String,
-    required: true,
-  },
-  description: {
-    type: String,
-    required: true,
-  },
-  tags: {
-    type: String,
-    required: true,
-  },
-})
-</script>
