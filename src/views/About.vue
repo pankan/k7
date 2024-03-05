@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="/style.css">
-  <title>About | K7</title>
-</head>
-<body>
+<script setup lang="ts">
+  import Footer from '../components/Footer.vue'
+  import { RouterLink } from 'vue-router'
+</script>
+
+<template>
   <div class="container">
     <div class="content-full">
       <h2>Kiran Pankan</h2>
@@ -30,7 +22,7 @@
       <p>When I'm not designing, you'll find me collecting quirky stuff, reading, gardening, or getting my hands dirty with DIY projects. I also enjoy supporting community organizations in my free time.</p>
 
       <p>I always welcome new connections and interesting projects. If you have a challenge needing an innovative approach, let's chat!</p>
-      <a href="/contact.html"><button>Let's Talk</button></a>
+      <router-link to="/contact"><button>Let's Talk</button></router-link>
       <hr>
       <p>Experience</p>
       <div class="jobs">
@@ -66,13 +58,6 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="copy">© 2024 </div>
-      <div class="link"><a href="/index.html">Home</a></div>
-      <div class="link"><a href="/works.html">Works</a></div>
-      <div class="link"><a href="/about.html">About</a></div>
-      <div class="link"><a href="/contact.html">Contact</a></div>
-    </footer>
+    <Footer />
   </div>
-</body>
-</html>
+</template>

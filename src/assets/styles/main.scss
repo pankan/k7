@@ -221,6 +221,11 @@ input:focus,
 textarea:focus{
   outline: 1px solid #ffffff88;
 }
+@media screen and (min-width: 1024px){
+  .container{
+    min-width: 980px;
+  }
+}
 @media screen and (max-width: 767px) {
   .container{
     width: calc(100% - 40px);

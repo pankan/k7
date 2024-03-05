@@ -1,25 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="/style.css">
-  <title>Works | K7</title>
-</head>
-<body>
+<script setup lang="ts">
+  import Footer from '../components/Footer.vue'
+  import { RouterLink } from 'vue-router'
+</script>
+
+<template>
   <div class="container">
     <div class="content-full">
       <h2>Works</h2>
       <hr>
       <div class="works">
-        <a href="/works/loxx.html" class="work">
+        <router-link to="/works/detail" class="work">
           <div class="thumb">
-            <img srcset="/img/lx-thumb.png 2x">
+            <img srcset="../assets/img/lx-thumb.png 2x">
           </div>
           <div class="info">
             <div class="year">2024</div>
@@ -29,10 +21,10 @@
               <div class="tags h6">Product, Branding, Web</div>
             </div>
           </div>
-        </a>
-        <a href="/works/loxx.html" class="work">
+        </router-link>
+        <router-link to="/works/detail" class="work">
           <div class="thumb">
-            <img srcset="/img/eg-thumb.png 2x">
+            <img srcset="../assets/img/eg-thumb.png 2x">
           </div>
           <div class="info">
             <div class="year">2024</div>
@@ -42,10 +34,10 @@
               <div class="tags h6">Product, Branding, Multi-OS</div>
             </div>
           </div>
-        </a>
-        <a href="/works/loxx.html" class="work">
+        </router-link>
+        <router-link to="/works/detail" class="work">
           <div class="thumb">
-            <img srcset="/img/bs-thumb.png 2x">
+            <img srcset="../assets/img/bs-thumb.png 2x">
           </div>
           <div class="info">
             <div class="year">2024</div>
@@ -55,10 +47,10 @@
               <div class="tags h6">Product, Branding, Web</div>
             </div>
           </div>
-        </a>
-        <a href="/works/loxx.html" class="work">
+        </router-link>
+        <router-link to="/works/detail" class="work">
           <div class="thumb">
-            <img srcset="/img/bx-thumb.png 2x">
+            <img srcset="../assets/img/bx-thumb.png 2x">
           </div>
           <div class="info">
             <div class="year">2023</div>
@@ -68,16 +60,9 @@
               <div class="tags h6">Product, Branding, Desktop, Mobile, Web</div>
             </div>
           </div>
-        </a>
+        </router-link>
       </div>
     </div>
-    <footer>
-      <div class="copy">© 2024 </div>
-      <div class="link"><a href="/index.html">Home</a></div>
-      <div class="link"><a href="/works.html">Works</a></div>
-      <div class="link"><a href="/about.html">About</a></div>
-      <div class="link"><a href="/contact.html">Contact</a></div>
-    </footer>
+    <Footer />
   </div>
-</body>
-</html>
+</template>
