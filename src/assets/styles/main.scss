@@ -228,9 +228,6 @@ textarea:focus{
   }
 }
 @media screen and (max-width: 767px) {
-  .container{
-    width: calc(100% - 40px);
-  }
   .two-cols{
     flex-direction: column;
   }
