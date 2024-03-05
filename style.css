@@ -75,6 +75,8 @@ a *{
 }
 button{
   font-family: "Kalnia", serif;
+  color: #E4E4E4;
+  font-size: 16px;
   background: #ffffff13;
   border: 1px solid #ffffff44;
   border-radius: .5rem;
