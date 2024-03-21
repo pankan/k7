@@ -1,36 +1,43 @@
 <script setup lang="ts">
-  import { RouterLink } from 'vue-router'
-  defineProps({
-    link: {
-      type: String,
-      required: true,
-    },
-    image: {
-      type: String,
-      required: true,
-    },
-    year: {
-      type: String,
-      required: true,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-    tags: {
-      type: String,
-      required: true,
-    },
-  })
+import { RouterLink } from 'vue-router'
+import { computed } from 'vue'
+
+const props = defineProps({
+  link: {
+    type: String,
+    required: true,
+  },
+  image: {
+    type: String,
+    required: true,
+  },
+  year: {
+    type: String,
+    required: true,
+  },
+  title: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  tags: {
+    type: String,
+    required: true,
+  },
+})
+
+const imageSrc = computed(() => {
+  return new URL(`../assets/img/${props.image}`, import.meta.url).href
+})
 </script>
+
 <template>
   <router-link :to="link" class="work">
     <div class="thumb">
-      <img :srcset="'./src/assets/img/lx-thumb.png 2x'" alt="Work Thumbnail" />
+      <img :src="imageSrc" alt="Work Thumbnail" />
     </div>
     <div class="info">
       <div class="year">{{ year }}</div>
