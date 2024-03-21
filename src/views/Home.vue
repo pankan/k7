@@ -3,7 +3,7 @@
 
 <template>
   <div class="container ai-center flex-row">
-    <img srcset="../assets/img/k7.png 2x" class="k7">
+    <img src="../assets/img/k7.png" class="k7">
     <div class="content">
       <h2>I craft digital products and services that seamlessly blend design and technology.</h2>
       <hr>
