@@ -30,7 +30,7 @@
 <template>
   <router-link :to="link" class="work">
     <div class="thumb">
-      <img :srcset="'./src/assets/img/' + image + ' 2x'" alt="Work Thumbnail" />
+      <img :srcset="'./src/assets/img/lx-thumb.png 2x'" alt="Work Thumbnail" />
     </div>
     <div class="info">
       <div class="year">{{ year }}</div>
