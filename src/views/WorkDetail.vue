@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router'
 import worksThumbData from '../data/worksThumb.json'
 import worksDetailData from '../data/worksDetail.json'
 import MarkdownIt from 'markdown-it'
+import Footer from '../components/Footer.vue'
 
 const route = useRoute()
 const workDetail = ref(null)
@@ -25,5 +26,6 @@ onMounted(() => {
       <hr>
       <div v-html="md.render(workDetail.content)"></div>
     </div>
+    <Footer />
   </div>
 </template>

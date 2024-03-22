@@ -1,10 +1,18 @@
 [
   {
     "id": "loxx",
-    "content": "## Loxx.ai\n\nSDLC platform designed from the ground up to integrate AI..."
+    "content": "SDLC platform designed from the ground up to integrate AI..."
   },
   {
     "id": "edge",
-    "content": "## Edge\n\nPeer-to-peer serverless infrastructure using the spare capacity..."
+    "content": "Peer-to-peer serverless infrastructure using the spare capacity..."
+  },
+  {
+    "id": "beanstalk",
+    "content": "AI-first Business intelligence and Customer experience"
+  },
+  {
+    "id": "blox",
+    "content": "The virtual office to unite your remote workforce"
   }
 ]
