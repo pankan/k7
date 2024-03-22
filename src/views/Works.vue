@@ -13,7 +13,7 @@
         <WorkThumb
           v-for="work in worksThumbData"
           :key="work.title"
-          :link="work.link"
+          :id="work.id"
           :image="work.image"
           :year="work.year"
           :title="work.title"

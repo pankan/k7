@@ -3,14 +3,14 @@ import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Works from './views/Works.vue'
 import Contact from './views/Contact.vue'
-import Detail from './views/Detail.vue'
+import WorkDetail from './views/WorkDetail.vue'
 
 const routes: RouteRecordRaw[] = [
   { path: '/', component: Home },
   { path: '/about', component: About },
   { path: '/works', component: Works },
   { path: '/contact', component: Contact },
-  { path: '/works/detail', component: Detail },
+  { path: '/works/:id', component: WorkDetail, name: 'WorkDetail' },
 ];
 
 const router = createRouter({

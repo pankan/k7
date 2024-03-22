@@ -51,7 +51,7 @@
   <div class="container">
     <div class="content-full">
       <h2>Contact me</h2>
-      <h6>Let's Create Something Great</h6>
+      <h6>Let's Create Something Great!</h6>
       <hr>
       <p>I thrive on collaborating with innovative teams to design digital products users love. If you have a project in the works, or just want to say hello,</p>
       <br>
