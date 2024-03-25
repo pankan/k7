@@ -1,30 +1,49 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import worksThumbData from '../data/worksThumb.json'
 import worksDetailData from '../data/worksDetail.json'
 import MarkdownIt from 'markdown-it'
 import Footer from '../components/Footer.vue'
+import WorkThumb from '../components/WorkThumb.vue'
 
 const route = useRoute()
-const workDetail = ref(null)
-const workThumb = ref(null)
 const md = new MarkdownIt()
-
-onMounted(() => {
+const workDetail = computed(() => {
   const workId = route.params.id as string
-  workDetail.value = worksDetailData.find(work => work.id === workId)
-  workThumb.value = worksThumbData.find(work => work.id === workId)
+  return worksDetailData.find(work => work.id === workId)
+})
+
+const workThumb = computed(() => {
+  const workId = route.params.id as string
+  return worksThumbData.find(work => work.id === workId)
+})
+
+const nextWork = computed(() => {
+  const currentIndex = worksThumbData.findIndex(work => work.id === route.params.id)
+  const nextIndex = (currentIndex + 1) % worksThumbData.length
+  return worksThumbData[nextIndex]
 })
 </script>
 
 <template>
   <div class="container" v-if="workDetail">
     <div class="content-full">
-      <h2><router-link to="/works">Works</router-link> > {{ workThumb.title }}</h2>
-      <h6>{{ workThumb.year }} | {{ workThumb.tags }}</h6>
+      <div class="d-flex ai-base jc-between">
+        <h2><router-link to="/works" class="fw-100">Works</router-link> > {{ workThumb?.title }}</h2>
+        <h6>{{ workThumb?.year }} | {{ workThumb?.tags }}</h6>
+      </div>
       <hr>
       <div v-html="md.render(workDetail.content)"></div>
+      <hr>
+      <WorkThumb
+        :id="nextWork.id"
+        :image="nextWork.image"
+        :year="nextWork.year"
+        :title="nextWork.title"
+        :description="nextWork.description"
+        :tags="nextWork.tags"
+      />
     </div>
     <Footer />
   </div>
