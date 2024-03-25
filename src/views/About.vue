@@ -6,8 +6,10 @@
 <template>
   <div class="container">
     <div class="content-full">
-      <h2>Kiran Pankan</h2>
-      <h6>UX Unicorn & Brand Strategist</h6>
+      <div class="header-sections">
+        <h2>Kiran Pankan</h2>
+        <h3>UX Unicorn & Brand Strategist</h3>
+      </div>
       <hr>
       <p>I'm a multi-disciplinary designer and innovator who thrives on crafting digital experiences that connect with people. For over a decade, I've been combining strategic thinking with creative execution to solve complex challenges.</p>
 

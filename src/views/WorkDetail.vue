@@ -29,9 +29,9 @@ const nextWork = computed(() => {
 <template>
   <div class="container" v-if="workDetail">
     <div class="content-full">
-      <div class="d-flex ai-base jc-between">
-        <h2><router-link to="/works" class="fw-100">Works</router-link> > {{ workThumb?.title }}</h2>
-        <h6>{{ workThumb?.year }} | {{ workThumb?.tags }}</h6>
+      <div class="header-sections">
+        <h2><router-link to="/works" class="fw-100">Works</router-link> <span class="fw-100 o-6">&gt;</span> {{ workThumb?.title }}</h2>
+        <h3>{{ workThumb?.year }} | {{ workThumb?.tags }}</h3>
       </div>
       <hr>
       <div v-html="md.render(workDetail.content)"></div>

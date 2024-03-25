@@ -44,7 +44,7 @@ const imageSrc = computed(() => {
       <div class="bottom">
         <div class="title h2">{{ title }}</div>
         <div class="desc">{{ description }}</div>
-        <div class="tags h6">{{ tags }}</div>
+        <div class="tags h3">{{ tags }}</div>
       </div>
     </div>
   </router-link>

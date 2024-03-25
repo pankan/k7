@@ -16,6 +16,10 @@ $green: #54c483;
   box-sizing: border-box;
 }
 
+.o-5{
+  opacity: .6;
+}
+
 hr {
   border-color: $primary-color;
   opacity: .2;
@@ -71,12 +75,24 @@ h2,
   margin: 0;
 }
 
-h6,
-.h6 {
+h3,
+.h3 {
   font-weight: 100;
   font-size: 22.6px;
   margin: 0;
   line-height: 34px;
+}
+
+h4, .h4{
+  font-weight: 400;
+  position: relative;
+  display: grid;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+p, li{
+  opacity: 0.7;
 }
 
 a {
@@ -88,6 +104,14 @@ a {
   &:visited,
   * {
     color: $primary-color;
+  }
+}
+blockquote, blockquote * {
+  font-family: "Kalnia", serif;
+  font-style: italic;
+  opacity: 1;
+  p{
+    font-size: 16px;
   }
 }
 
@@ -385,6 +409,11 @@ textarea {
     opacity: 0;
   }
 }
+.header-sections{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
 
 @media screen and (min-width: 1024px) {
   .container {
@@ -438,5 +467,12 @@ textarea {
 
   .tags {
     margin-top: 8px;
+  }
+
+  .header-sections{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
   }
 }
