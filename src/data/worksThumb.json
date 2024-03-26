@@ -1,6 +1,6 @@
 [
   {
-    "link": "/works/detail",
+    "id": "loxx",
     "image": "lx-thumb.png",
     "year": "2024",
     "title": "Loxx.ai",
@@ -8,7 +8,7 @@
     "tags": "Product, Branding, Web"
   },
   {
-    "link": "/works/detail",
+    "id": "edge",
     "image": "eg-thumb.png",
     "year": "2024",
     "title": "Edge",
@@ -16,7 +16,7 @@
     "tags": "Product, Branding, Multi-OS"
   },
   {
-    "link": "/works/detail",
+    "id": "beanstalk",
     "image": "bs-thumb.png",
     "year": "2024",
     "title": "BeanStalk",
@@ -24,7 +24,7 @@
     "tags": "Product, Branding, Web"
   },
   {
-    "link": "/works/detail",
+    "id": "blox",
     "image": "bx-thumb.png",
     "year": "2023",
     "title": "Blox Suite",

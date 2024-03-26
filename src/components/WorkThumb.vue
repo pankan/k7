@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 import { computed } from 'vue'
 
 const props = defineProps({
-  link: {
+  id: {
     type: String,
     required: true,
   },
@@ -35,7 +35,7 @@ const imageSrc = computed(() => {
 </script>
 
 <template>
-  <router-link :to="link" class="work">
+  <router-link :to="{ name: 'WorkDetail', params: { id: id } }" class="work">
     <div class="thumb">
       <img :src="imageSrc" alt="Work Thumbnail" />
     </div>
@@ -44,7 +44,7 @@ const imageSrc = computed(() => {
       <div class="bottom">
         <div class="title h2">{{ title }}</div>
         <div class="desc">{{ description }}</div>
-        <div class="tags h6">{{ tags }}</div>
+        <div class="tags h3">{{ tags }}</div>
       </div>
     </div>
   </router-link>
