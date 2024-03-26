@@ -22,7 +22,7 @@ const router = createRouter({
   },
 })
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
     const isAuthenticated = sessionStorage.getItem('isAuthenticated')
     if (isAuthenticated) {
