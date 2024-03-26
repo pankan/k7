@@ -28,7 +28,7 @@ router.beforeEach((to, _, next) => {
     if (isAuthenticated) {
       next()
     } else {
-      const password = prompt('Please enter the password to view the work detail')
+      const password = prompt('To view the project details, please enter the password. If you do not have the password, contact Kiran to obtain it.')
       if (password === '0pen$esam3') {
         sessionStorage.setItem('isAuthenticated', 'true')
         next()
