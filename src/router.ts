@@ -10,7 +10,7 @@ const routes: RouteRecordRaw[] = [
   { path: '/about', component: About },
   { path: '/works', component: Works },
   { path: '/contact', component: Contact },
-  { path: '/works/:id', component: WorkDetail, name: 'WorkDetail' },
+  { path: '/works/:id', component: WorkDetail, name: 'WorkDetail', meta: { requiresAuth: true } },
 ];
 
 const router = createRouter({
@@ -20,6 +20,26 @@ const router = createRouter({
     // Always scroll to top
     return { top: 0 }
   },
+})
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+    const isAuthenticated = sessionStorage.getItem('isAuthenticated')
+    if (isAuthenticated) {
+      next()
+    } else {
+      const password = prompt('Please enter the password to view the work detail')
+      if (password === '0pen$esam3') {
+        sessionStorage.setItem('isAuthenticated', 'true')
+        next()
+      } else {
+        alert('Invalid password. Access denied.')
+        next(false)
+      }
+    }
+  } else {
+    next()
+  }
 })
 
 export default router;

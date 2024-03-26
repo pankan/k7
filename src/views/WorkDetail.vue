@@ -24,6 +24,13 @@ const nextWork = computed(() => {
   const nextIndex = (currentIndex + 1) % worksThumbData.length
   return worksThumbData[nextIndex]
 })
+
+// const router = useRouter()
+
+// function logout() {
+//   sessionStorage.removeItem('isAuthenticated')
+//   router.push('/works')
+// }
 </script>
 
 <template>
@@ -35,6 +42,7 @@ const nextWork = computed(() => {
       </div>
       <hr>
       <div v-html="md.render(workDetail.content)"></div>
+      <!-- <button @click="logout">Logout</button> -->
       <hr>
       <WorkThumb
         :id="nextWork.id"
