@@ -29,7 +29,7 @@ router.beforeEach((to, _, next) => {
       next()
     } else {
       const password = prompt('To view the project details, please enter the password. If you do not have the password, contact Kiran to obtain it.')
-      if (password === '0pen$esam3') {
+      if (password === 'opensaysme') {
         sessionStorage.setItem('isAuthenticated', 'true')
         next()
       } else {
