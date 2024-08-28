@@ -15,7 +15,7 @@
 
       <p>My superpowers lie in research, branding, UX and UI design. I immerse myself to uncover user insights and business needs. Then I visualize solutions focused on engagement and conversion. </p>
 
-      <p>I've delivered multi-channel products, campaigns and brand strategies for 80+ companies globally. From startups to enterprises, I partner cross-functionally to drive results. My versatile skillset allows me to design for platforms ranging from voice to automotive. </p>
+      <p>I've delivered multi-channel products, campaigns and brand strategies for 100+ companies globally. From startups to enterprises, I partner cross-functionally to drive results. My versatile skillset allows me to design for platforms ranging from voice to automotive. </p>
 
       <p>I geek out on programming too! My technical expertise empowers me to bring ideas to life through prototyping and front-end development. I've built solutions leveraging HTML, CSS, JavaScript and more.</p>
 
